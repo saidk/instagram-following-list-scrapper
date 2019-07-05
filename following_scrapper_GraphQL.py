@@ -73,10 +73,12 @@ def followParser(userID, session):
     return users
 
 def main():
-    passwd = "12345abc"
-    user = "eero.tamm"
+    //here you add the password and your username
+    passwd = ""
+    user = ""
     session = authorization(user, passwd)
-    r = session.get("https://www.instagram.com/promoty.eu/?__a=1")
+    //instead of **** you should add the link the profile you want to scrap
+    r = session.get("****/?__a=1")
     json_format = json.loads(r.text)
     userID = json_format['graphql']['user']['id']
     users = followParser(userID, session)
