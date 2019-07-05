@@ -12,10 +12,12 @@ import json
 start_time = time.time()
 bot = Bot()
 session = requests.Session()
-passwd="12345abc"
-user="eero.tamm"
+//specify the username and password
+passwd=""
+user=""
 bot.login(username=user, password=passwd)
-followers = bot.get_user_following(5998871957)
+//add the id of a profile that you want to scrap
+followers = bot.get_user_following(***)
 with open('csvfile3.csv','w') as file:
     for follower in followers:
         username_info = session.get('https://i.instagram.com/api/v1/users/'+follower+'/info')
