@@ -61,7 +61,7 @@ igramscraper==0.3.1
 imagesize==1.0.0
 instabot==0.52.0
 ipykernel==5.1.0
-ipython==7.1.1
+ipython==7.16.3
 ipython-genutils==0.2.0
 ipywidgets==7.2.1
 isort==4.3.4
